@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GBK Games</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="overlay"></div>
+      <!-- Papan Skor -->
+      <div class="papan-scor">
+        <div class="player user">
+          <div class="nama user">Player</div>
+          <div id="user-scor" class="scor user">0</div>
+        </div>
+        <div class="player bot">
+          <div class="nama bot">Komputer</div>
+          <div id="bot-scor" class="scor bot">0</div>
+        </div>
+      </div>
+
+      <!-- Papan Game -->
+      <div class="papan-game">
+        <div class="image-user">
+          <img id="img-user" src="images/batu.png" alt="" width="100%" />
+        </div>
+        <div class="image-bot">
+          <img id="img-bot" src="images/batu.png" alt="" width="100%" />
+        </div>
+      </div>
+      <!-- papan tanya -->
+      <div id="tanya">
+        <h2>ingin main lagi?</h2>
+        <div class="jawab">
+          <button id="iya">Iya</button>
+          <button id="tidak">Tidak</button>
+        </div>
+      </div>
+      <!-- Papan Pilih -->
+      <div class="papan-pilih">
+        <button class="play-btn" onclick="play('batu')">
+          <img src="images/batu.png" width="100%" />
+        </button>
+        <button class="play-btn" onclick="play('kertas')">
+          <img src="images/kertas.png" width="100%" />
+        </button>
+        <button class="play-btn" onclick="play('gunting')">
+          <img src="images/gunting.png" width="100%" />
+        </button>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

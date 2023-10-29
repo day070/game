@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container {
+  width: 600px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.overlay {
+  width: 600px;
+  height: 500px;
+  position: absolute;
+  background-color: black;
+  z-index: -9;
+  opacity: 40%;
+  border-radius: 20px;
+}
+
+.papan-scor {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+.player {
+  margin: 5px;
+  width: 150px;
+  border-radius: 10px;
+}
+.player.user {
+  background-color: rgb(153, 35, 35);
+}
+.nama {
+  font-size: 20px;
+  border-bottom: 1px solid;
+  padding: 5px;
+}
+.player.bot {
+  background-color: black;
+}
+
+.papan-game {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.image-bot {
+  max-width: 300px;
+  filter: drop-shadow(10px 5px 6px black);
+  transform: scaleX(-1);
+}
+.image-user {
+  max-width: 300px;
+  filter: drop-shadow(10px 5px 6px black);
+}
+.papan-pilih {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.papan-pilih button {
+  max-width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(46, 48, 43);
+  border-radius: 10px;
+  transition: 0.2s;
+}
+.papan-pilih button:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+#tanya {
+  display: none;
+}
+
+#tanya.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.jawab {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
