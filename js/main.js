@@ -48,6 +48,9 @@ function cek() {
     window.location = "index.html";
     tanya.classList.remove("active");
   });
+  tidak.addEventListener("click", () => {
+    tanya.classList.remove("active");
+  });
 }
 function setTheWinner(userDecision, comDecision) {
   let resul = "";
