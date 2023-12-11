@@ -8,12 +8,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('../images/bg.jpg');
+  background-image: url("../images/41.jpg");
   background-size: cover;
+
   background-repeat: no-repeat;
 }
 .container {
-  width: 600px;
+  width: 1000px;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -21,7 +22,7 @@ body {
   align-items: center;
 }
 .overlay {
-  width: 600px;
+  width: 1000px;
   height: 500px;
   position: absolute;
   background-color: black;
