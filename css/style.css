@@ -80,8 +80,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(46, 48, 43);
-  border-radius: 10px;
+  background-color: #25242471;
+  border: none;
+  border-radius: 8px;
   transition: 0.2s;
 }
 .papan-pilih button:hover {
